@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
-      <div>
+      <div className="logoTitle">
         <NavLink to="/Home">
           <h1>Clément</h1>
         </NavLink>
@@ -29,6 +29,7 @@ const Header = () => {
           <li>Contact</li>
         </NavLink>
       </ul>
+      <i class="uil uil-moonset change-theme" id="theme-button"></i>
     </div>
   );
 }
