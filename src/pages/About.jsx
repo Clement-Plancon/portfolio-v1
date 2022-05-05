@@ -9,7 +9,7 @@ const About = () => {
  
     return (
 
-      <div className={about} id="about">
+      <section className={`${about} section`} id="about">
         <div className={title}>
           <h1>À-propos de moi</h1>
           <h2>Introduction</h2>
@@ -24,7 +24,7 @@ const About = () => {
             <a href="#">Télécharger ma lettre de motivation</a>
           </div>
         </div>
-      </div>
+      </section>
 
     );
   }

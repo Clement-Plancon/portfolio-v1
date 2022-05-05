@@ -6,7 +6,7 @@ const Portfolio = () => {
   let left = "left"
   let right = "right"
     return (
-      <div className={portfolio} id="portfolio">
+      <section className={`${portfolio} section`} id="portfolio">
         <div className={title}>
           <h1>Portfolio</h1>
           <h2>Travail le plus récent</h2>
@@ -21,7 +21,7 @@ const Portfolio = () => {
             <a href="">Accéder au portfolio</a>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
   

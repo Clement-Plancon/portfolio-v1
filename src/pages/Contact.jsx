@@ -19,7 +19,7 @@ const Contact = () => {
   let containerLeft = "container__left"
   let containerRight = "container__right"
     return (
-      <div className={contact} id="contact">
+      <section className={`${contact} section`} id="contact">
       <div className={title}>
         <h1>Contact</h1>
         <h2>Entrer en contact</h2>
@@ -50,7 +50,7 @@ const Contact = () => {
           </div>          
         </div>
       </div>
-    </div>
+    </section>
     );
   }
   

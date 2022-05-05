@@ -20,7 +20,7 @@ const Home = () => {
   let clipImg = "clipImg"
 
     return (
-      <div className={home}>
+      <section className={`${home} section`} id="home">
         <div className={socialIcons}>
           <a href={linkLinkedin}>{iconLinkedin}</a>
           <a href={linkGithub}>{iconGithub}</a>
@@ -39,7 +39,7 @@ const Home = () => {
         <div className={rightImg}>
           <div className={clipImg}></div>
         </div>
-      </div>
+      </section>
     );
   }
   

@@ -1,24 +1,73 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
+import variables from '../style/index.scss';
 
 const Header = () => {
 
+/* useEffect(() =>{
+
+const headerColor = () =>{
+ 
+  const headerContainer = document.querySelector('.header')
+  const aboutContainer = document.querySelector('.about')
+  const homeContainer = document.querySelector('.home')
+  const homeTitle = document.querySelector('.link a[href="#top"]')
+  const aboutTitle = document.querySelector('.link a[href="#about"]')
+  const skillsTitle = document.querySelector('.link a[href="#skills"]')
+  const degreeTitle = document.querySelector('.link a[href="#degree"]')
+  const portfolioTitle = document.querySelector('.link a[href="#portfolio"]')
+  const contactTitle = document.querySelector('.link a[href="#contact"]')
+  // Measure section size
+  const headerSize = headerContainer.offsetTop + headerContainer.offsetHeight
+  const homeSize = homeContainer.offsetTop + homeContainer.offsetHeight
+  // Condition for color title
+  if(headerSize >= (homeContainer.offsetTop - 100) && headerSize <= homeSize){
+    homeTitle.style.color = `${colorTitle}`
+  }else{
+    homeTitle.style.color = ""
+  }
+}
+  window.addEventListener('scroll', headerColor)
+},[]) */
+
+/*==================== SCROLL SHADOW HEADER ====================*/
   const scrollPos = () =>{
   const headerPos = document.querySelector('.header')
-  if(headerPos.offsetTop > 0){
+  if(window.pageYOffset > 0){
     headerPos.style.boxShadow = "0 -1px 4px rgb(0 0 0 / 15%)";
   } else {
     headerPos.style.boxShadow = "0 0px 0px rgb(0 0 0 / 0%)"
   }
 }
-  window.addEventListener('scroll', scrollPos)
+window.addEventListener('scroll', scrollPos)
+
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+useEffect(() =>{
+const sections = document.querySelectorAll('section')
+let colorTitle = variables.firstColor;
+function scrollActive() {
+    const scrollY = window.pageYOffset
+    sections.forEach(current => {
+      const sectionHeight = current.offsetHeight
+      const sectionTop = current.offsetTop - 50;
+      let sectionId = current.getAttribute('id')
+      if (scrollY > sectionTop && scrollY <= (sectionTop + sectionHeight)) {
+        document.querySelector(`.link a[href="#${sectionId}"]`).style.color = `${colorTitle}`       
+      } else {
+        document.querySelector(`.link a[href="#${sectionId}"]`).style.color = ""
+      }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+},[])
+
   return (
     <div className="header">
       <div className="logoTitle">
           <h1>Clément</h1>
       </div>
       <div className="link">
-        <a href="#top">Accueil</a>
+        <a href="#home" style={{color: 'rgb(224, 192, 87)'}}>Accueil</a>
         <a href="#about">À-propos</a>
         <a href="#skills">Compétences</a>
         <a href="#degree">Qualifications</a>

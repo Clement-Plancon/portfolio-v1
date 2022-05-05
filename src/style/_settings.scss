@@ -64,14 +64,15 @@ sans-serif;
 
 /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
 
-$extra-big-font-size: 5rem;
-$big-font-size: 3rem;
-$h1-font-size: 1.5rem;
-$h2-font-size: 1.25rem;
-$h3-font-size: 1.125rem;
-$normal-font-size: .938rem;
-$small-font-size: .813rem;
-$smaller-font-size: .75rem;
+$calculationText: (0.01 * 10vmin);
+$extra-big-font-size: calc(80 * #{$calculationText});
+$big-font-size: calc(48 * #{$calculationText});
+$h1-font-size: calc(24 * #{$calculationText});
+$h2-font-size: calc(20 * #{$calculationText});
+$h3-font-size: calc(18 * #{$calculationText});
+$normal-font-size: calc(15 * #{$calculationText});
+$small-font-size: calc(13 * #{$calculationText});
+$smaller-font-size: calc(12 * #{$calculationText});
 
 /*========== SVG size ==========*/
 
@@ -124,9 +125,43 @@ body {
     color: black;
 }
 
+@mixin animationTxt {
+    position: relative;
+    overflow-x: hidden;
+    transform: translateY(0%);
+    animation: 2s invocTxtY;
+    font-size: calc(32 * (0.01 * 10vmin));
+    @keyframes invocTxtY {
+        from {
+            transform: translateY(120%);
+        }
+        to {
+            transform: translateY(0%);
+        }
+    }
+    &::before {
+        content: "";
+        background-color: $first-color;
+        width: 120%;
+        left: -150%;
+        height: 100%;
+        position: absolute;
+        animation: 2s invocTxt;
+        @keyframes invocTxt {
+            from {
+                left: -150%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+    }
+}
+
 :export {
     extraSmallSvgSize: $extra-small-svg-size;
     smallSvgSize: $small-svg-size;
     mediumSvgSize: $medium-svg-size;
     bigSvgSize: $big-svg-size;
+    firstColor: $first-color;
 }
