@@ -30,14 +30,16 @@ const Home = () => {
 
         </div>
         <div className={centerText}>
-          <h1>Moi c'est <br/>Clément</h1>
+          <h1>Moi c'est Clément</h1>
           <p>Développeur web</p>
           <p>Etudiant en 3eme année analyste en génie informatique à l'Institut National Supérieur des Technologies Avancée</p>
           <a href="#contact"> Contactez Moi</a>
         </div>
 
         <div className={rightImg}>
-          <div className={clipImg}></div>
+          <div className={clipImg}>
+            <img src="./img_photo/me_primary.png" alt="" />
+          </div>
         </div>
       </section>
     );

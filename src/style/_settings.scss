@@ -112,7 +112,15 @@ $z-modal: 1000;
     padding: 0;
     margin: 0;
 }
-
+/*========== breakpoints ==========*/
+$breakpoints: (
+    "phone-down": 500px,
+    "tablet-up": 768px,
+    "tablet-down": 900px,
+    "desktop-up": 1024px,
+    "desktop-down": 1280px,
+    "widescreen-up": 1440px
+);
 html {
     scroll-behavior: smooth;
 }
@@ -123,6 +131,8 @@ body {
     font-size: $normal-font-size;
     background-color: $body-color;
     color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 @mixin animationTxt {
