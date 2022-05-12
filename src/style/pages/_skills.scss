@@ -17,9 +17,15 @@
       font-size: $big-font-size;
       color: black;
       margin-top: 5%;
+      @media (max-width: 768px) {
+        font-size: calc($big-font-size + 10px);
+      }
     }
     h2 {
       color: black;
+      @media (max-width: 768px) {
+        font-size: $big-font-size;
+      }
     }
   }
   .center {
@@ -38,6 +44,10 @@
       @media (max-width: 1024px) {
         margin-bottom: 50px;
       }
+      @media (max-width:768px) {
+
+        font-size:  calc($h2-font-size + 5px);
+    }
     }
     .skillsButton {
       cursor: pointer;
