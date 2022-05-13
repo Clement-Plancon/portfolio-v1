@@ -9,9 +9,7 @@ const SoftSkillsCard = (props) => {
       </div>
       <div class="cardContainer__bottom">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          doloribus architecto esse eaque ex voluptatem nostrum eligendi a nihil
-          ipsa.
+          {props.text}
         </p>
       </div>
     </div>

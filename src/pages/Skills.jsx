@@ -69,18 +69,22 @@ const Skills = () => {
         <SoftSkillsCard
           img={"./icon_soft_skill/adaptation.svg"}
           title={"Adaptabilité et rigueur"}
+          text={"Rigoureux et organisé dans ma méthodologie et dans mon travail, j’aime planifier mes taches et mon emploi du temps, je reste tout de même flexible et m’adapte rapidement aux changements brusques ou aux imprévus."}
         />
         <SoftSkillsCard
           img={"./icon_soft_skill/teamwork.svg"}
           title={"Esprit d'équipe"}
+          text={"Travailler en équipe est pour moi une occasion de m’enrichir personnellement autant de façon personnelle que professionnel, la mutualisation des compétences est la clé de la réussite, car tout seul on va plus vite, ensemble on va plus loin."}
         />
         <SoftSkillsCard
           img={"./icon_soft_skill/dialogue.svg"}
           title={"Empathie"}
+          text={"Comprendre son interlocuteur, se mettre à sa place, et penser à travers lui tout en ressortant une interprétation se rapprochant de sa volonté est pas essence une compétence essentielle à la résolution des conflits et des problématiques."}
         />
         <SoftSkillsCard
           img={"./icon_soft_skill/emotional.svg"}
           title={"Intelligence émotionnelle"}
+          text={"Savoir gérer ses émotions, prendre du recul sur les problèmes sans se laisser submerger par la pression et par le stress permet de se concentrer sur les solutions et d’apporter une réponse efficace et concise."}
         />
       </div>
     </div>

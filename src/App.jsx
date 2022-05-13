@@ -1,31 +1,22 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Skills from "./pages/Skills";
-import Degree from "./pages/Degree";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
+import { Route, Routes } from "react-router-dom";
+import MainPage from "./MainPage";
+import ProfessionalProject from "./pages/Documentation/ProfessionalProject";
+import PersonalProject from "./pages/Documentation/PersonalProject";
+import Challenge from "./pages/Documentation/Challenge";
+import Resources from "./pages/Documentation/Resources";
 
-const App =() => {
+const App = () => {
   return (
     <div className="App">
-    <Header />
-    <BrowserRouter>
-      <Switch>
-
-      </Switch>
-    </BrowserRouter>
-    <Home />
-    <About  />
-    <Skills  />
-    <Degree />
-    <Portfolio />
-    <Contact />
-  </div>
-  )
-}
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/professionalProject" element={<ProfessionalProject />} />
+        <Route path="/personalproject" element={<PersonalProject />} />
+        <Route path="/challenge" element={<Challenge />} />
+        <Route path="/resources" element={<Resources />} />
+      </Routes>
+    </div>
+  );
+};
 
 export default App;
-
-
