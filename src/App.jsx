@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/portfolio-v1/" element={<MainPage />} />
         <Route
           path="/professionalProject"
           element={<ProfessionalProject items={datas} />}
