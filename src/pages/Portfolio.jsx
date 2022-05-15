@@ -1,5 +1,4 @@
 import {Link} from "react-router-dom";
-import ProfessionalProject from "./Documentation/ProfessionalProject"
 
 const Portfolio = () => {
   let portfolio = "portfolio";

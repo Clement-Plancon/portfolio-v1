@@ -1,0 +1,52 @@
+@mixin blockSize($width: 100%, $height: 100%) {
+  width: $width;
+  height: $height;
+}
+
+@mixin displayFlex(
+  $display: flex,
+  $justifyContent: center,
+  $alignItems: center,
+  $flexDirection: row
+) {
+  display: $display;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-direction: $flexDirection;
+}
+
+#professional-project-global {
+  @include blockSize();
+
+  #professional-project-container {
+    @extend #professional-project-global;
+    @include displayFlex($flexDirection: column);
+    margin-top: 80px;
+  }
+}
+
+.professional-project-components {
+  @extend #professional-project-container;
+  &__card {
+    @include blockSize($width: 80%, $height: 200px);
+    @include displayFlex($justifyContent: none, $flexDirection: column);
+    margin-top: 20px;
+    background-color: white;
+
+    transition: 0.5s;
+    font-size: $h3-font-size;
+    &:hover {
+      transform: scale(1.1);
+    }
+    h3 {
+      color: white;
+      background-color: hsl(0, 0%, 13%);
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.professional-project-components__card--shadow-black {
+  filter: drop-shadow(0 0 0.75rem black);
+}

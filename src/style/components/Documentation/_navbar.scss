@@ -1,12 +1,17 @@
 nav{
     width: 100%;
     height: 70px;
-    background: yellow;
+    background: hsl(0, 0%, 13%);
+    position: fixed;
+    top:0;
     ul{
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        a{
+            color: white;
+        }
     }
 }
