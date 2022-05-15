@@ -1,10 +1,10 @@
 import React from "react";
-const CardProjects = ({element, modifier, titles, text}) => {
-console.log(text)
+
+const CardProjects = ({ block, element, modifier, titles, text }) => {
   return (
-    <div className={`${element} ${element}${modifier}`}>
+    <div className={`${block} ${block}${modifier}`}>
       <h3>{titles}</h3>
-      <p>{JSON.stringify(text)}</p>
+      <p>{text}</p>
     </div>
   );
 };

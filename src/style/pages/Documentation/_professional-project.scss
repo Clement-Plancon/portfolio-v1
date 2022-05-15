@@ -27,7 +27,7 @@
 
 .professional-project-components {
   @extend #professional-project-container;
-  &__card {
+  .professional-project-components-card {
     @include blockSize($width: 80%, $height: 200px);
     @include displayFlex($justifyContent: none, $flexDirection: column);
     margin-top: 20px;
@@ -44,9 +44,12 @@
       width: 100%;
       text-align: center;
     }
+    p {
+      text-align: center;
+    }
   }
 }
 
-.professional-project-components__card--shadow-black {
+.professional-project-components-card--shadow-black {
   filter: drop-shadow(0 0 0.75rem black);
 }
