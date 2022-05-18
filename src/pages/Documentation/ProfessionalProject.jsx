@@ -1,11 +1,22 @@
 import React from "react";
 import CardProjects from "../../components/Documentation/CardProjects";
 import Navbar from "../../components/Documentation/Navbar";
-import { UserContext } from "../../components/Context/Context";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 const ProfessionalProject = () => {
-  let text1 = null;
+  const [jsonDatasPro, setjsonDatasPro] = useState("");
+
+  useEffect(() => {
+    getDatasPro();
+  }, []);
+
+  const getDatasPro = () => {
+    axios.get("data/text.json").then((res) => {
+      const jsonGlobal = res.data.textProfessionalProject;
+      setjsonDatasPro(jsonGlobal);
+    });
+  };
+
   let blockProfessionalProjectGlobal = "professional-project-global";
   let blockProfessionalProjectContainer = "professional-project-container";
   let blockProfessionalProjectComponents = "professional-project-components";
@@ -13,80 +24,34 @@ const ProfessionalProject = () => {
   let elementCarousel = "professional-project-components-card__carousel";
   let modifierShadow = "--shadow-black";
 
-  if (text1 != null) {
-    return (
-      <UserContext.Consumer>
-        {(jsonDatas) => {
-          return (
-            <main id={blockProfessionalProjectGlobal}>
-              <Navbar />
-              <section id={blockProfessionalProjectContainer}>
-                <h2>Projets Professionnels</h2>
-                <p>
-                  Vous pouvez voir ici mes projets professionnels que j’ai pu
-                  accomplir dernièrement, et si disponible, des aperçus de ces
-                  projets.
-                </p>
-                <div className={blockProfessionalProjectComponents}>
-                  <CardProjects
-                    block={blockCard}
-                    element={elementCarousel}
-                    modifier={modifierShadow}
-                    titles={"Marquerie.co"}
-                    text={jsonDatas.textProfessionalProject.text1}
-                  />
-                  <CardProjects
-                    block={blockCard}
-                    element={elementCarousel}
-                    modifier={modifierShadow}
-                    titles={"Etienne services"}
-                    text={jsonDatas.textProfessionalProject.text1}
-                  />
-                </div>
-              </section>
-            </main>
-          );
-        }}
-      </UserContext.Consumer>
-    );
-  } else {
-   
-    return (
-      <UserContext.Consumer>
-        {(jsonDatas) => {
-          return (
-            <main id={blockProfessionalProjectGlobal}>
-              <Navbar />
-              <section id={blockProfessionalProjectContainer}>
-                <h2>Projets Professionnels</h2>
-                <p>
-                  Vous pouvez voir ici mes projets professionnels que j’ai pu
-                  accomplir dernièrement, et si disponible, des aperçus de ces
-                  projets.
-                </p>
-                <div className={blockProfessionalProjectComponents}>
-                  <CardProjects
-                    block={blockCard}
-                    element={elementCarousel}
-                    modifier={modifierShadow}
-                    titles={"Marquerie.co"}
-                    text={jsonDatas.textProfessionalProject.text1}
-                  />
-                  <CardProjects
-                    block={blockCard}
-                    element={elementCarousel}
-                    modifier={modifierShadow}
-                    titles={"Etienne services"}
-                    text={jsonDatas.textProfessionalProject.text1}
-                  />
-                </div>
-              </section>
-            </main>
-          );
-        }}
-      </UserContext.Consumer>
-    );
-  }
+  return (
+    <main id={blockProfessionalProjectGlobal}>
+      <Navbar />
+      <section id={blockProfessionalProjectContainer}>
+        <h2>Projets Professionnels</h2>
+        <p>
+          Vous pouvez voir ici mes projets professionnels que j’ai pu accomplir
+          dernièrement, et si disponible, des aperçus de ces projets.
+        </p>
+        <div className={blockProfessionalProjectComponents}>
+          <CardProjects
+            block={blockCard}
+            element={elementCarousel}
+            modifier={modifierShadow}
+            titles={"Marquerie.co"}
+            text={jsonDatasPro.text1}
+          />
+          <CardProjects
+            block={blockCard}
+            element={elementCarousel}
+            modifier={modifierShadow}
+            titles={"Etienne services"}
+            text={jsonDatasPro.text1}
+          />
+        </div>
+      </section>
+    </main>
+  );
 };
 
 export default ProfessionalProject;
