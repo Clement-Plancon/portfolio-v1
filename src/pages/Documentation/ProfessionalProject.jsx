@@ -57,6 +57,12 @@ const ProfessionalProject = () => {
 <span>- Prototypage à l’aide d’adobe XD et Figma.</span>
 <span>- Conception du site web via Wordpress | Elementor en utilisant les langages PHP | Mysql côté back et javascript coté front.</span>
 </p>)
+const iconModal1 = (
+  <div className="iconModal">
+    <img src="./icon_dev/html.svg" alt="" />
+    <img src="./icon_dev/css3.svg" alt="" />
+    <img src="./icon_dev/javascript.svg" alt="" />
+  </div> )
   return (
     <main id={blockProfessionalProjectGlobal}>
       <Navbar />
@@ -75,6 +81,8 @@ const ProfessionalProject = () => {
             text={jsonDatasPro.text1}
             logoModal={"./icon_brands/marquerie.png"}
             textModal={textModal1}
+            iconModal={iconModal1}
+            linkModal={"https://marquerie.co/"}
           />
           <CardProjects
             block={blockCard}
@@ -84,6 +92,9 @@ const ProfessionalProject = () => {
             text={jsonDatasPro.text2}
             logoModal={"./icon_brands/etienne.jpg"}
             textModal={textModal2}
+            iconModal={iconModal1}
+            linkModal={"https://www.etienne-services.fr/"}
+         
           />
         </div>
       </section>

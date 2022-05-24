@@ -8,7 +8,9 @@ const CardProjects = ({
   titles,
   text,
   logoModal,
-  textModal
+  textModal,
+  iconModal,
+  linkModal
 }) => {
   const displayModalRef = useRef(null);
   const displayModal = () => {
@@ -37,8 +39,13 @@ const CardProjects = ({
         onClick={removeModal}
       >
         <div className="containerModal" onClick={modalClickPrevent}>
-          <img src={logoModal} alt="" />
+          <div className="logoContainer">
+            <img src={logoModal} alt="" />
+          </div>
+          <div className="breakLine"></div>    
           {textModal}
+          {iconModal}
+          <a href={linkModal} target="_blank">Lien vers le site</a>       
           <div className="exitModal" onClick={removeModal}>
             X
           </div>

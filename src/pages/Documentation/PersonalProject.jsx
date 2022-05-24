@@ -58,6 +58,7 @@ const PersonalProject = () => {
   <span>- Prototypage à l’aide d’adobe XD et Figma.</span>
   <span>- Conception du site web via Wordpress | Elementor en utilisant les langages PHP | Mysql côté back et javascript coté front.</span>
   </p>)
+  
   return (
     <main id={blockProfessionalProjectGlobal}>
       <Navbar />
@@ -76,6 +77,7 @@ const PersonalProject = () => {
             text={jsonDatasPro.text1}
             logoModal={"./icon_brands/marquerie.png"}
             textModal={textModal1}
+
           />
           <CardProjects
             block={blockCard}
@@ -85,6 +87,7 @@ const PersonalProject = () => {
             text={jsonDatasPro.text2}
             logoModal={"./icon_brands/etienne.jpg"}
             textModal={textModal2}
+
           />
         </div>
       </section>

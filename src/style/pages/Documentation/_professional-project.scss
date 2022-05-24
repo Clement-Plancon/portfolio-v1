@@ -17,6 +17,7 @@
 
 #professional-project-global {
   @include blockSize();
+  font-family: consolas;
 
   #professional-project-container {
     @extend #professional-project-global;
@@ -65,17 +66,27 @@
 }
 
 .containerModal {
-  @include blockSize($width: 80%, $height: 400px);
+  @include blockSize($width: 80%, $height: 55%);
   @include displayFlex(
-      $justifyContent: none,
-      $flexDirection: column,
-      $alignItems: flex-start
-    );
+    $justifyContent: none,
+    $flexDirection: column,
+    $alignItems: flex-start
+  );
   background-color: white;
   position: relative;
+
+  .logoContainer {
+    width: 100%;
+    @include displayFlex($justifyContent: center);
+  }
   img {
-    width: 10%;
-    
+    min-width: 10%;
+    max-width: 10%;
+  }
+  .breakLine {
+    @include blockSize($width: 100%, $height: 1px);
+    background-color: black;
+
   }
   p {
     padding: 5px;
@@ -93,5 +104,12 @@
     color: black;
     cursor: pointer;
   }
-
+  .iconModal{
+    width: 100%;
+  img{
+    width: 50%;
+    height: 50%;
+  }
+   
+  }
 }
