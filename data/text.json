@@ -1,3 +1,8 @@
 {
-    "textProfessionalProject":{"text1":"Marquerie.co est un site B2B de vente de produits français et locaux qui met en relation marque et point de vente en facilitant le dialogue et les échanges."}
-    }
+  "textProfessionalProject": {
+    "text1": "Marquerie.co est un site B2B de vente de produits français et locaux qui met en relation marque et point de vente en facilitant le dialogue et les échanges.",
+    "text2": "Etienne Services est une entreprise familiale d’artisans fournissant des services de serrurerie, plomberie et électricien.",
+    "title1": "Marquerie.co",
+    "title2": "Etienne Services"
+  }
+}
