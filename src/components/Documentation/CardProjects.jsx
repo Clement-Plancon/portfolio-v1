@@ -42,7 +42,8 @@ const CardProjects = ({
           <div className="logoContainer">
             <img src={logoModal} alt="" />
           </div>
-          <div className="breakLine"></div>    
+          <div className="breakLine"></div> 
+             
           {textModal}
           {iconModal}
           <a href={linkModal} target="_blank">Lien vers le site</a>       

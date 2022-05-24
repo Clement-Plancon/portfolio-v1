@@ -13,7 +13,7 @@ const PersonalProject = () => {
 
   const getDatasPro = () => {
     axios.get("data/text.json").then((res) => {
-      const jsonGlobal = res.data.textProfessionalProject;
+      const jsonGlobal = res.data.textPersonnalProject;
       setjsonDatasPro(jsonGlobal);
     });
     
@@ -63,9 +63,9 @@ const PersonalProject = () => {
     <main id={blockProfessionalProjectGlobal}>
       <Navbar />
       <section id={blockProfessionalProjectContainer}>
-        <h2>Projets Professionnels</h2>
+        <h2>Projets Personnels</h2>
         <p>
-          Vous pouvez voir ici mes projets professionnels que j’ai pu accomplir
+          Vous pouvez voir ici mes projets personnels que j’ai pu accomplir
           dernièrement, et si disponible, des aperçus de ces projets.
         </p>
         <div className={blockProfessionalProjectComponents}>
