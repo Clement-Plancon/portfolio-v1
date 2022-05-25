@@ -61,8 +61,27 @@ const iconModal1 = (
   <div className="iconModal">
     <img src="./icon_dev/html.svg" alt="" />
     <img src="./icon_dev/css3.svg" alt="" />
+    <img src="./icon_dev/sass.svg" alt="" />
     <img src="./icon_dev/javascript.svg" alt="" />
+    <img src="./icon_dev/jquery-4.svg" alt="" />
+    <img src="./icon_dev/react-2.svg" alt="" />
+    <img src="./icon_dev/nodejs.svg" alt="" />
+    <img src="./icon_design/figma.svg" alt="" />
+    <img src="./icon_utilitaire/google-tag-manager.svg" alt="" />
+    <img src="./icon_utilitaire/google-analytics-4.svg" alt="" />
+    <img src="./icon_utilitaire/google-data-studio.svg" alt="" />
   </div> )
+const iconModal2 = (
+    <div className="iconModal">
+      <img src="./icon_dev/html.svg" alt="" />
+      <img src="./icon_dev/css3.svg" alt="" />
+      <img src="./icon_dev/javascript.svg" alt="" />
+      <img src="./icon_design/balsamiq-icon.svg" alt="" />
+      <img src="./icon_design/figma.svg" alt="" />
+      <img src="./icon_dev/php.svg" alt="" />
+      <img src="./icon_dev/mysql.svg" alt="" />
+      <img src="./icon_utilitaire/wordpress.svg" alt="" />
+    </div> )
   return (
     <main id={blockProfessionalProjectGlobal}>
       <Navbar />
@@ -92,7 +111,7 @@ const iconModal1 = (
             text={jsonDatasPro.text2}
             logoModal={"./icon_brands/etienne.jpg"}
             textModal={textModal2}
-            iconModal={iconModal1}
+            iconModal={iconModal2}
             linkModal={"https://www.etienne-services.fr/"}
          
           />

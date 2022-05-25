@@ -10,9 +10,11 @@ const CardProjects = ({
   logoModal,
   textModal,
   iconModal,
-  linkModal
+  linkModal,
+  iFrameModal,
 }) => {
   const displayModalRef = useRef(null);
+  const linkWebsite = useRef(null);
   const displayModal = () => {
     displayModalRef.current.classList.add("cardModal");
     displayModalRef.current.classList.remove("cardModalNone");
@@ -26,7 +28,9 @@ const CardProjects = ({
     e.stopPropagation();
     return false;
   };
-
+  const openLink = () => {
+    window.open(`${linkModal}`);
+  };
   return (
     <Fragment>
       <div className={`${block} ${block}${modifier}`} onClick={displayModal}>
@@ -42,11 +46,13 @@ const CardProjects = ({
           <div className="logoContainer">
             <img src={logoModal} alt="" />
           </div>
-          <div className="breakLine"></div> 
-             
+          <div className="breakLine"></div>
+          {iFrameModal}
           {textModal}
           {iconModal}
-          <a href={linkModal} target="_blank">Lien vers le site</a>       
+          <a href={linkModal} target="_blank" onClick={openLink}>
+            Lien vers le site
+          </a>
           <div className="exitModal" onClick={removeModal}>
             X
           </div>

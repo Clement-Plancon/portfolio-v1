@@ -58,7 +58,18 @@ const PersonalProject = () => {
   <span>- Prototypage à l’aide d’adobe XD et Figma.</span>
   <span>- Conception du site web via Wordpress | Elementor en utilisant les langages PHP | Mysql côté back et javascript coté front.</span>
   </p>)
-  
+  const iFrameModal1 = (<div className="iFrame-container"><iframe class="responsive-iframe"
+  title="Password Maker Application"
+  width="100%"
+  height="400px"
+  src="https://clement-plancon.github.io/passwordMaker/">
+</iframe></div>)
+  const iFrameModal2 = (<div className="iFrame-container"><iframe class="responsive-iframe"
+  title="Form Checker Application"
+  width="100%"
+  height="400px"
+  src="https://clement-plancon.github.io/formChecker/">
+</iframe></div>)
   return (
     <main id={blockProfessionalProjectGlobal}>
       <Navbar />
@@ -75,9 +86,10 @@ const PersonalProject = () => {
             modifier={modifierShadow}
             titles={jsonDatasPro.title1}
             text={jsonDatasPro.text1}
-            logoModal={"./icon_brands/marquerie.png"}
-            textModal={textModal1}
-
+            logoModal={"./icon_brands/password_maker.png"}
+            textModal={''}
+            iFrameModal={iFrameModal1}
+            linkModal={"https://clement-plancon.github.io/passwordMaker/"}
           />
           <CardProjects
             block={blockCard}
@@ -85,9 +97,10 @@ const PersonalProject = () => {
             modifier={modifierShadow}
             titles={jsonDatasPro.title2}
             text={jsonDatasPro.text2}
-            logoModal={"./icon_brands/etienne.jpg"}
-            textModal={textModal2}
-
+            logoModal={"./icon_brands/password_maker.png"}
+            textModal={''}
+            iFrameModal={iFrameModal2}
+            linkModal={"https://clement-plancon.github.io/formChecker/"}
           />
         </div>
       </section>
