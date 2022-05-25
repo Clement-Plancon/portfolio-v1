@@ -8,7 +8,25 @@
   "textPersonnalProject": {
     "text1": "Générateur de mot de passe développé à l'aide de javascript.",
     "text2": "Formulaire complet pouvant gérer les erreurs et les oublis à l'aide de regex et de javascript.",
+    "text3": "Application utilisant une api météo pour vous donner le temps à un moment et une position donnée.",
+    "text4": "Petit jeu ou des bulles sont générés, le but étant de faire le plus grans score possible.",
+    "text5": "Petit jeu ou un oiseau doit rentrer dans des bulles pour les faire exploser.",
+    "text6": "Une phrase animée par du javascript qui change en fonction des variables incluses dans le script.",
+    "text7": "Concept de site web associatif sur le theme du réchauffement climatique. Développé en html et css sous forme de landing page.",
+    "text8": "Concept de site web associatif sur le theme du réchauffement climatique. Développé en html et css sous forme de landing page.",
     "title1": "password Maker",
-    "title2": "Form Checker"
+    "title2": "Form Checker",
+    "title3": "Weather App",
+    "title4": "Bubble Maker",
+    "title5": "Sclag Bird",
+    "title6": "Text Animation",
+    "title7": "Climate",
+    "title8": "Interactive Map"
+  },
+  "challenge": {
+    "text1": "Marquerie.co est un site B2B de vente de produits français et locaux qui met en relation marque et point de vente en facilitant le dialogue et les échanges.",
+    "text2": "Etienne Services est une entreprise familiale d’artisans fournissant des services de serrurerie, plomberie et électricien.",
+    "title1": "Ping Application",
+    "title2": "Etienne Services"
   }
 }

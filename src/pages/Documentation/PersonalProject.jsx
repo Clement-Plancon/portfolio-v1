@@ -58,17 +58,53 @@ const PersonalProject = () => {
   <span>- Prototypage à l’aide d’adobe XD et Figma.</span>
   <span>- Conception du site web via Wordpress | Elementor en utilisant les langages PHP | Mysql côté back et javascript coté front.</span>
   </p>)
-  const iFrameModal1 = (<div className="iFrame-container"><iframe class="responsive-iframe"
+  const iFrameModal1 = (<div className="iFrame-container"><iframe className="responsive-iframe"
   title="Password Maker Application"
   width="100%"
   height="400px"
   src="https://clement-plancon.github.io/passwordMaker/">
 </iframe></div>)
-  const iFrameModal2 = (<div className="iFrame-container"><iframe class="responsive-iframe"
+  const iFrameModal2 = (<div className="iFrame-container"><iframe className="responsive-iframe"
   title="Form Checker Application"
   width="100%"
   height="400px"
   src="https://clement-plancon.github.io/formChecker/">
+</iframe></div>)
+ const iFrameModal3 = (<div className="iFrame-container"><iframe className="responsive-iframe"
+ title="Weather app Application"
+ width="100%"
+ height="400px"
+ src="https://clement-plancon.github.io/weatherReportApp/">
+</iframe></div>)
+ const iFrameModal4 = (<div className="iFrame-container"><iframe className="responsive-iframe"
+ title="Bubble Maker"
+ width="100%"
+ height="400px"
+ src="https://clement-plancon.github.io/bubbleMaker/">
+</iframe></div>)
+ const iFrameModal5 = (<div className="iFrame-container"><iframe className="responsive-iframe"
+ title="Schlag Bird"
+ width="100%"
+ height="400px"
+ src="https://clement-plancon.github.io/SchlagBird/">
+</iframe></div>)
+ const iFrameModal6 = (<div className="iFrame-container"><iframe className="responsive-iframe"
+ title="Text Anim"
+ width="100%"
+ height="400px"
+ src="https://clement-plancon.github.io/textAnim/">
+</iframe></div>)
+ const iFrameModal7 = (<div className="iFrame-container"><iframe className="responsive-iframe"
+ title="Climate"
+ width="100%"
+ height="400px"
+ src="https://clement-plancon.github.io/climateWebsite/">
+</iframe></div>)
+ const iFrameModal8 = (<div className="iFrame-container"><iframe className="responsive-iframe"
+ title="Interactive Map"
+ width="100%"
+ height="400px"
+ src="https://clement-plancon.github.io/JsInteractifMap/">
 </iframe></div>)
   return (
     <main id={blockProfessionalProjectGlobal}>
@@ -84,9 +120,20 @@ const PersonalProject = () => {
             block={blockCard}
             element={elementCarousel}
             modifier={modifierShadow}
+            titles={jsonDatasPro.title7}
+            text={jsonDatasPro.text7}
+            logoModal={''}
+            textModal={''}
+            iFrameModal={iFrameModal7}
+            linkModal={"https://clement-plancon.github.io/climateWebsite/"}
+          />
+          <CardProjects
+            block={blockCard}
+            element={elementCarousel}
+            modifier={modifierShadow}
             titles={jsonDatasPro.title1}
             text={jsonDatasPro.text1}
-            logoModal={"./icon_brands/password_maker.png"}
+            logoModal={''}
             textModal={''}
             iFrameModal={iFrameModal1}
             linkModal={"https://clement-plancon.github.io/passwordMaker/"}
@@ -97,10 +144,54 @@ const PersonalProject = () => {
             modifier={modifierShadow}
             titles={jsonDatasPro.title2}
             text={jsonDatasPro.text2}
-            logoModal={"./icon_brands/password_maker.png"}
+            logoModal={''}
             textModal={''}
             iFrameModal={iFrameModal2}
             linkModal={"https://clement-plancon.github.io/formChecker/"}
+          />
+           <CardProjects
+            block={blockCard}
+            element={elementCarousel}
+            modifier={modifierShadow}
+            titles={jsonDatasPro.title3}
+            text={jsonDatasPro.text3}
+            logoModal={''}
+            textModal={''}
+            iFrameModal={iFrameModal3}
+            linkModal={"https://clement-plancon.github.io/weatherReportApp/"}
+          />
+          <CardProjects
+            block={blockCard}
+            element={elementCarousel}
+            modifier={modifierShadow}
+            titles={jsonDatasPro.title4}
+            text={jsonDatasPro.text4}
+            logoModal={''}
+            textModal={''}
+            iFrameModal={iFrameModal4}
+            linkModal={"https://clement-plancon.github.io/bubbleMaker/"}
+          />
+          <CardProjects
+            block={blockCard}
+            element={elementCarousel}
+            modifier={modifierShadow}
+            titles={jsonDatasPro.title5}
+            text={jsonDatasPro.text5}
+            logoModal={''}
+            textModal={''}
+            iFrameModal={iFrameModal5}
+            linkModal={"https://clement-plancon.github.io/SchlagBird/"}
+          />
+          <CardProjects
+            block={blockCard}
+            element={elementCarousel}
+            modifier={modifierShadow}
+            titles={jsonDatasPro.title6}
+            text={jsonDatasPro.text6}
+            logoModal={''}
+            textModal={''}
+            iFrameModal={iFrameModal6}
+            linkModal={"https://clement-plancon.github.io/textAnim/"}
           />
         </div>
       </section>
