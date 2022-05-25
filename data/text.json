@@ -4,5 +4,11 @@
     "text2": "Etienne Services est une entreprise familiale d’artisans fournissant des services de serrurerie, plomberie et électricien.",
     "title1": "Marquerie.co",
     "title2": "Etienne Services"
+  },
+  "textPersonnalProject": {
+    "text1": "Générateur de mot de passe développé à l'aide de javascript.",
+    "text2": "Formulaire complet pouvant gérer les erreurs et les oublis à l'aide de regex et de javascript.",
+    "title1": "password Maker",
+    "title2": "Form Checker"
   }
 }
