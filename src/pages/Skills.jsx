@@ -10,41 +10,47 @@ const Skills = () => {
   let card = "card";
   const hardSkillsFront = (
     <Fragment>
-      <img src="./icon_dev/react-2.svg" alt="" />
-      <img src="./icon_dev/javascript.svg" alt="" />
-      <img src="./icon_dev/html.svg" alt="" />
-      <img src="./icon_dev/css3.svg" alt="" />
-      <img src="./icon_dev/bootstrap_logo.svg" alt="" />
-      <img src="./icon_dev/sass.svg" alt="" />
-      <img src="./icon_dev/tailwind-css-2.svg" alt="" />
-      <img src="./icon_dev/jquery-4.svg" alt="" />
+      <img src="./img/dev/front-end/html.svg" alt="" />
+      <img src="./img/dev/front-end/css.svg" alt="" />
+      <img src="./img/dev/front-end/javascript.svg" alt="" />
+      <img src="./img/dev/front-end/react.svg" alt="" />
+      <img src="./img/dev/front-end/pug.svg" alt="" />
+      <img src="./img/dev/front-end/sass.svg" alt="" />
+      <img src="./img/dev/front-end/bootstrap.svg" alt="" />
+      <img src="./img/dev/front-end/jquery.svg" alt="" />
+      <img src="./img/dev/front-end/tailwind.svg" alt="" />
+      <img src="./img/dev/front-end/chartjs.svg" alt="" />
     </Fragment>
   );
   const hardSkillsBack = (
     <Fragment>
-      <img src="./icon_dev/symfony.svg" alt="" />
-      <img src="./icon_dev/php.svg" alt="" />
-      <img src="./icon_dev/nodejs.svg" alt="" />
-      <img src="./icon_dev/mysql.svg" alt="" />
+      <img src="./img/dev/back-end/php.svg" alt="" />
+      <img src="./img/dev/back-end/nodejs.svg" alt="" />
+      <img src="./img/dev/back-end/mysql.svg" alt="" />
     </Fragment>
   );
   const hardSkillsDesign = (
     <Fragment>
-      <img src="./icon_design/figma.svg" alt="" />
-      <img src="./icon_design/xd.svg" alt="" />
-      <img src="./icon_design/balsamiq-icon.svg" alt="" />
-      <img src="./icon_design/photoshop.svg" alt="" />
+      <img src="./img/design/figma.svg" alt="" />
+      <img src="./img/design/adobexd.svg" alt="" />
+      <img src="./img/design/balsamiq.svg" alt="" />
+      <img src="./img/design/photoshop.svg" alt="" />
     </Fragment>
   );
   const hardSkillsOther = (
     <Fragment>
-      <img src="./icon_utilitaire/google-tag-manager.svg" alt="" />
-      <img src="./icon_utilitaire/google-analytics-4.svg" alt="" />
-      <img src="./icon_utilitaire/google-data-studio.svg" alt="" />
-      <img src="./icon_utilitaire/wordpress.svg" alt="" />
-      <img src="./icon_utilitaire/webflow.svg" alt="" />
-      <img src="./icon_utilitaire/agile.svg" alt="" />
-      <img src="./icon_utilitaire/bem.svg" alt="" />
+      <img src="./img/dev/outil/github.svg" alt="" />
+      <img src="./img/dev/outil/heroku.svg" alt="" />
+      <img src="./img/autre/tagmanager.svg" alt="" />
+      <img src="./img/autre/analytics.svg" alt="" />
+      <img src="./img/autre/datastudio.svg" alt="" />
+      <img src="./img/autre/webflow.svg" alt="" />
+      <img src="./img/autre/wordpress.svg" alt="" />
+      <img src="./img/autre/elementor.svg" alt="" />
+      <img src="./img/autre/seo.svg" alt="" />
+      <img src="./img/autre/bem.svg" alt="" />
+      <img src="./img/autre/scrum.svg" alt="" />
+      <img src="./img/autre/accessibilite.svg" alt="" />
     </Fragment>
   );
   const personalInterestTabText1 =
