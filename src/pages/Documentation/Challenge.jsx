@@ -73,7 +73,7 @@ const Challenge = () => {
           Vous pouvez voir ici mes projets personnels que j’ai pu accomplir
           dernièrement, et si disponible, des aperçus de ces projets.
         </p>
-        <div className={blockProfessionalProjectComponents}>
+        <div className="project-grid">
           <CardProjects
             block={blockCard}
             element={elementCarousel}

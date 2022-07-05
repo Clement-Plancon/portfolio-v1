@@ -33,7 +33,7 @@ const ProfessionalProject = () => {
           dernièrement, et si disponible, des aperçus de ces projets.
         </p>
 
-        <div class="project-grid">
+        <div className="project-grid">
           <CardProjects
             block={blockCard}
             element={elementCarousel}
