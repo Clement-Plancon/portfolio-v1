@@ -135,6 +135,13 @@ const changeColor = () =>{
   );
   const [TabValue, setTabValue] = useState(hardSkillsTab);
 
+  
+/*   const darkModeComponent = () =>{
+    document.querySelectorAll(".cardContainer__top").forEach(function(i){
+      (i.classList.add('darkModeRemoveYellowColor'));
+      }); 
+  } */
+
   const changeText = (param) => {
     if (param === 1) {
       setTabValue(hardSkillsTab);

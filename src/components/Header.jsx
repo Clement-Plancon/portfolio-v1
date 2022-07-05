@@ -62,11 +62,14 @@ const headerColor = () =>{
     }
     window.addEventListener("scroll", scrollActive);
   }, []);
+
+/*==================== UP MOBILE MENU ====================*/
+
 const changeMenuText = () =>{
   document.querySelector('.header .logoTitle').classList.add('showMenu')
   document.querySelector('.header .logoTitle').style.display = "none"
-  document.querySelector('.header .link svg').style.display = "none"
-  document.querySelector('.header .link svg').style.display = "none"
+/*   document.querySelector('.header .link svg').style.display = "none"
+  document.querySelector('.header .link svg').style.display = "none" */
   document.querySelector('.header').style.height = "120px"
   document.querySelector('.header').style.flexWrap = "wrap"
   document.querySelectorAll('.header .link a').forEach((current) =>{
@@ -80,8 +83,8 @@ const changeMenuText = () =>{
 const removeMenuText = () =>{
   document.querySelector('.header .logoTitle').classList.remove('showMenu')
   document.querySelector('.header .logoTitle').style.display = ""
-  document.querySelector('.header .link svg').style.display = ""
-  document.querySelector('.header .link svg').style.display = ""
+/*   document.querySelector('.header .link svg').style.display = ""
+  document.querySelector('.header .link svg').style.display = "" */
   document.querySelector('.header').style.height = "74px"
   document.querySelector('.header .link').classList.remove('showMenu')
   document.querySelector('.mobileNavbar').classList.remove('removeMenu')
@@ -122,7 +125,7 @@ document.querySelectorAll(".home__socialIcons svg, .header .link svg, .skills .c
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
         <div id="exit-menu"  onClick={() => removeMenuText()}>X</div>
-        <svg
+      {/*   <svg
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
           role="img"
@@ -135,14 +138,14 @@ document.querySelectorAll(".home__socialIcons svg, .header .link svg, .skills .c
             fill="currentColor"
             d="M11 19H8a1 1 0 0 0 0 2h3a1 1 0 0 0 0-2Zm9-4h-1.16A8.18 8.18 0 0 0 20 12.05a1 1 0 0 0-.34-.93a1 1 0 0 0-1-.19a6 6 0 0 1-1.92.32a6.06 6.06 0 0 1-6.06-6a6.93 6.93 0 0 1 .1-1a1 1 0 0 0-.35-.92a1 1 0 0 0-1-.18A8.06 8.06 0 0 0 4 10.68A8 8 0 0 0 5.27 15H4a1 1 0 0 0 0 2h16a1 1 0 0 0 0-2Zm-3.72 0H7.83a6 6 0 0 1 .88-9.36a8.06 8.06 0 0 0 8.05 7.61a7 7 0 0 0 .79 0A6.08 6.08 0 0 1 16.28 15ZM16 19h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Z"
           />
-        </svg>
+        </svg> */}
       </div>
       <div className="mobileNavbar">
         <div className="titleMobile">
           <h1>Clément</h1>
         </div>
         <div className="logoMobile">
-          <svg
+        {/*   <svg
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             role="img"
@@ -156,7 +159,7 @@ document.querySelectorAll(".home__socialIcons svg, .header .link svg, .skills .c
               fill="currentColor"
               d="M11 19H8a1 1 0 0 0 0 2h3a1 1 0 0 0 0-2Zm9-4h-1.16A8.18 8.18 0 0 0 20 12.05a1 1 0 0 0-.34-.93a1 1 0 0 0-1-.19a6 6 0 0 1-1.92.32a6.06 6.06 0 0 1-6.06-6a6.93 6.93 0 0 1 .1-1a1 1 0 0 0-.35-.92a1 1 0 0 0-1-.18A8.06 8.06 0 0 0 4 10.68A8 8 0 0 0 5.27 15H4a1 1 0 0 0 0 2h16a1 1 0 0 0 0-2Zm-3.72 0H7.83a6 6 0 0 1 .88-9.36a8.06 8.06 0 0 0 8.05 7.61a7 7 0 0 0 .79 0A6.08 6.08 0 0 1 16.28 15ZM16 19h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Z"
               />
-          </svg>
+          </svg> */}
           <img
             src="./icon_global/menu-mobile.svg"
             alt=""
