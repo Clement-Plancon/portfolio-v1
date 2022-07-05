@@ -78,6 +78,8 @@
     }
     svg {
       cursor: pointer;
+      width: 20px;
+      height: 20px;
     }
     #exit-menu {
       display: none;
@@ -87,6 +89,7 @@
         right: -0.6999999999999993rem;
         bottom: 0.5rem;
         font-size: 1.5rem;
+        cursor: pointer;
       }
     }
   }
@@ -120,9 +123,12 @@
       svg {
         font-size: 25px;
         margin-right: 5px;
+        cursor: pointer;
       }
       img {
         width: 20px;
+        cursor: pointer;
+
       }
     }
   }

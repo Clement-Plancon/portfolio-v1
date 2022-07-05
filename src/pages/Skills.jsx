@@ -8,6 +8,20 @@ const Skills = () => {
   let title = "title";
   let center = "center";
   let card = "card";
+
+const changeColor = () =>{
+  if(document.querySelector("body").classList.contains("darkModeBody")){
+    alert('test')
+    document.querySelectorAll(".cardContainer__top").forEach(function(i){
+      (i.classList.add('darkModeRemoveYellow'));
+      });         
+  }else{
+    document.querySelectorAll(".cardContainer__top").forEach(function(i){
+      (i.classList.remove('darkModeRemoveYellow'));
+      });   
+  }
+}
+
   const hardSkillsFront = (
     <Fragment>
       <img src="./img/dev/front-end/html.svg" alt="" />
