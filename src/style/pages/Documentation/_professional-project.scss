@@ -23,6 +23,13 @@
     @extend #professional-project-global;
     @include displayFlex($flexDirection: column);
     margin-top: 100px;
+    h2{
+      font-size: 3em;
+    }
+    > p{
+      font-size: 1.5em;
+      text-align: center;
+    }
   }
 }
 
@@ -36,6 +43,7 @@
   @media (max-width: 450px) {
     grid-template-columns: auto;
     width: 50%;
+    margin-bottom: 50px;
   }
   .container-project-card {
     position: relative;
@@ -56,10 +64,17 @@
       width: 100%;
       color: white;
       background-color: hsl(0, 0%, 13%);
+      @media (max-width: 450px) {
+        font-size: 2em;
+      }
     }
     p {
       margin-top: 1em;
       height: 50%;
+      @media (max-width: 450px) {
+        height: 36%;
+        font-size: 1.5em;
+      }
     }
     &__techno {
       display: flex;
