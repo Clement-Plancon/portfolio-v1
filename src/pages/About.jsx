@@ -16,7 +16,9 @@ const About = () => {
         </div>
         <div className={center}>
           <div className={centerLeft}>
-            <div className={clipImg}></div>
+            <div className={clipImg}>
+              <img src="./img_photo/photo_portfolio_deux.png" alt="photo Clément de profil" />
+            </div>
           </div>
           <div className={centerRight}>
             <p>Maitrisant le développement web et ayant des affinités avec le webdesign, je suis actuellement à la recherche d'une alternance pour le mois de septembre 2022 à raison de 3 semaines en entreprise et 1 en formation.</p>
