@@ -3,9 +3,22 @@ import { useState } from "react"
 const Degree = () => {
 
   const degreesPara = (<div className="qualificationCorps">
+    <div className="qualificationData">
+    <div></div>
+    <div>
+      <span className="qualification__rounder"></span>
+      <span className="qualification__line"></span>
+    </div>
+    <div className="right">
+      <h3>M1/M2 - Architecte en génie informatique</h3>
+      <h4>Paris -  Institut National Supérieur des Technologies Avancée</h4>
+      <i className="uil uil-calendar-alt"></i> 2022 - 2024
+    </div>  
+  </div>
+  
   <div className="qualificationData">
     <div className="qualificationData__text">
-    <h3>Analyste en génie informatique</h3>
+    <h3>L3 - Analyste en génie informatique</h3>
     <h4>Paris -  Institut National Supérieur des Technologies Avancée</h4>
     <i className="uil uil-calendar-alt"></i> 2021 - 2022
     </div>
@@ -44,6 +57,19 @@ const Degree = () => {
 </div>);
 
 const experiencesPara = (<div className="qualificationCorps">
+   <div className="qualificationData">
+    <div></div>
+    <div>
+      <span className="qualification__rounder"></span>
+      <span className="qualification__line"></span>
+    </div>
+    <div className="right">
+      <h3>Développeur full-stack</h3>
+      <h4>Ministère des finances</h4>
+      <i className="uil uil-calendar-alt"></i> alternance - 2022 - 2024
+    </div>  
+  </div>
+
   <div className="qualificationData">
     <div className="qualificationData__text">
     <h3>Développeur full-stack</h3>
