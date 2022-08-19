@@ -42,6 +42,10 @@ const ProfessionalProject = () => {
             text={jsonDatasPro.text1}
             logoModal={"./icon_brands/marquerie.png"}
             linkModal={"https://marquerie.co/"}
+            skills1={"SASS"}
+            skills2={"Jquery"}
+            skills3={"React"}
+            githubLinkOn={false}
           />
           <CardProjects
             block={blockCard}
@@ -51,24 +55,24 @@ const ProfessionalProject = () => {
             text={jsonDatasPro.text2}
             logoModal={"./icon_brands/etienne.jpg"}
             linkModal={"https://www.etienne-services.fr/"}
+            skills1={"Wordpress"}
+            skills2={"Javascript"}
+            skills3={"PHP"}
+            githubLinkOn={false}
           />
           <CardProjects
             block={blockCard}
             element={elementCarousel}
             modifier={modifierShadow}
-            titles={jsonDatasPro.title2}
-            text={jsonDatasPro.text2}
+            titles={jsonDatasPro.title3}
+            text={jsonDatasPro.text3}
             logoModal={"./icon_brands/etienne.jpg"}
-            linkModal={"https://www.etienne-services.fr/"}
-          />
-          <CardProjects
-            block={blockCard}
-            element={elementCarousel}
-            modifier={modifierShadow}
-            titles={jsonDatasPro.title2}
-            text={jsonDatasPro.text2}
-            logoModal={"./icon_brands/etienne.jpg"}
-            linkModal={"https://www.etienne-services.fr/"}
+            linkModal={"https://clement-plancon.github.io/card_game_limite_limite/"}
+            githubLink={"https://github.com/Clement-Plancon/card_game_limite_limite"}
+            skills1={"HTML"}
+            skills2={"CSS"}
+            skills3={"Javascript"}
+            githubLinkOn={true}
           />
         </div>
       </section>

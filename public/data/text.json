@@ -2,8 +2,10 @@
   "textProfessionalProject": {
     "text1": "Marquerie.co est un site B2B de vente de produits français et locaux qui met en relation marque et point de vente en facilitant le dialogue et les échanges.",
     "text2": "Etienne Services est une entreprise familiale d’artisans fournissant des services de serrurerie, plomberie et électricien.",
+    "text3": "Cardboard reprenant le concept du jeu limite limite.",
     "title1": "Marquerie.co",
-    "title2": "Etienne Services"
+    "title2": "Etienne Services",
+    "title3": "Cardboard 'Limite-Limite'"
   },
   "textPersonnalProject": {
     "text1": "Générateur de mot de passe développé à l'aide de javascript.",
@@ -18,7 +20,7 @@
     "title2": "Form Checker",
     "title3": "Weather App",
     "title4": "Bubble Maker",
-    "title5": "Sclag Bird",
+    "title5": "Shlag Bird",
     "title6": "Text Animation",
     "title7": "Climate",
     "title8": "Interactive Map"

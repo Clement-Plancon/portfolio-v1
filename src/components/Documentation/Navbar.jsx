@@ -4,14 +4,17 @@ const Navarbar = () => {
   return (
     <nav>
       <ul>
-        <li>
-          <Link to="/professionalproject">Projet professionnel</Link>
+      <li>
+          <Link to="/">Accueil</Link>
         </li>
         <li>
-          <Link to="/personalproject">Projet personnel</Link>
+          <Link to="/professionalproject">Projets professionnels</Link>
         </li>
         <li>
-          <Link to="/challenge">Challenge</Link>
+          <Link to="/personalproject">Projets personnels</Link>
+        </li>
+        <li>
+          <Link to="/challenge">Challenges</Link>
         </li>
         <li>
           <Link to="/resources">Ressources</Link>

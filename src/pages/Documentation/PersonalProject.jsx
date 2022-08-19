@@ -78,6 +78,10 @@ const PersonalProject = () => {
             logoModal={''}
             textModal={''}
             linkModal={"https://clement-plancon.github.io/climateWebsite/"}
+            githubLink={"https://github.com/Clement-Plancon/climateWebsite"}
+            skills1={"HTML"}
+            skills2={"CSS"}
+            skills3={"Javascript"}
           />
           <CardProjects
             block={blockCard}
@@ -88,6 +92,10 @@ const PersonalProject = () => {
             logoModal={''}
             textModal={''}
             linkModal={"https://clement-plancon.github.io/passwordMaker/"}
+            githubLink={"https://github.com/Clement-Plancon/passwordMaker"}
+            skills1={"HTML"}
+            skills2={"CSS"}
+            skills3={"Javascript"}
           />
           <CardProjects
             block={blockCard}
@@ -98,6 +106,10 @@ const PersonalProject = () => {
             logoModal={''}
             textModal={''}
             linkModal={"https://clement-plancon.github.io/formChecker/"}
+            githubLink={"https://github.com/Clement-Plancon/formChecker"}
+            skills1={"HTML"}
+            skills2={"CSS"}
+            skills3={"Javascript"}
           />
            <CardProjects
             block={blockCard}
@@ -108,6 +120,10 @@ const PersonalProject = () => {
             logoModal={''}
             textModal={''}
             linkModal={"https://clement-plancon.github.io/weatherReportApp/"}
+            githubLink={"https://github.com/Clement-Plancon/weatherReportApp"}
+            skills1={"HTML"}
+            skills2={"CSS"}
+            skills3={"Javascript"}
           />
           <CardProjects
             block={blockCard}
@@ -118,6 +134,10 @@ const PersonalProject = () => {
             logoModal={''}
             textModal={''}
             linkModal={"https://clement-plancon.github.io/bubbleMaker/"}
+            githubLink={"https://github.com/Clement-Plancon/bubbleMaker"}
+            skills1={"HTML"}
+            skills2={"CSS"}
+            skills3={"Javascript"}
           />
           <CardProjects
             block={blockCard}
@@ -128,6 +148,10 @@ const PersonalProject = () => {
             logoModal={''}
             textModal={''}
             linkModal={"https://clement-plancon.github.io/SchlagBird/"}
+            githubLink={"https://github.com/Clement-Plancon/SchlagBird"}
+            skills1={"HTML"}
+            skills2={"CSS"}
+            skills3={"Javascript"}
           />
           <CardProjects
             block={blockCard}
@@ -138,6 +162,10 @@ const PersonalProject = () => {
             logoModal={''}
             textModal={''}
             linkModal={"https://clement-plancon.github.io/textAnim/"}
+            githubLink={"https://github.com/Clement-Plancon/textAnim"}
+            skills1={"HTML"}
+            skills2={"CSS"}
+            skills3={"Javascript"}
           />
         </div>
       </section>
