@@ -88,6 +88,13 @@
             position: absolute;
             height: 100%;
             width: 100%;
+            @media (max-width: 768px) {
+              left: 34px;
+              bottom: -29px;
+            }
+            @media (max-width: 500px) {
+              left: 26px;
+            }
           }
       }
     }
