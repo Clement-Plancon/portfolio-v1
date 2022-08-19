@@ -21,7 +21,7 @@ const About = () => {
             </div>
           </div>
           <div className={centerRight}>
-            <p>Maitrisant le développement web et ayant des affinités avec le webdesign, je suis actuellement à la recherche d'une alternance pour le mois de septembre 2022 à raison de 3 semaines en entreprise et 1 en formation.</p>
+            <p>Maitrisant le développement web et ayant des affinités avec le webdesign, je suis actuellement en alternance au seins du Laboratoire de transformation du ministère des finances pour une durée de 2 ans.</p>
             <a href="./pdf/CV Clément Plançon - développeur web.pdf" target="_blank">Télécharger mon CV</a>
             {/* <a href="#">Télécharger ma lettre de motivation</a> */}
           </div>
