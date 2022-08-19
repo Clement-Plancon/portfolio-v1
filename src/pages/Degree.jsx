@@ -65,7 +65,7 @@ const experiencesPara = (<div className="qualificationCorps">
     </div>
     <div className="right">
       <h3>Développeur full-stack</h3>
-      <h4>Ministère des finances</h4>
+      <h4>Ministère des finances - Bercy</h4>
       <i className="uil uil-calendar-alt"></i> alternance - 2022 - 2024
     </div>  
   </div>
