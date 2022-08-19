@@ -68,9 +68,9 @@ const Challenge = () => {
     <main id={blockProfessionalProjectGlobal}>
       <Navbar />
       <section id={blockProfessionalProjectContainer}>
-        <h2>Projets Personnels</h2>
+        <h2>Challenges</h2>
         <p>
-          Vous pouvez voir ici mes projets personnels que j’ai pu accomplir
+          Vous pouvez voir ici les challenges que j’ai pu accomplir
           dernièrement, et si disponible, des aperçus de ces projets.
         </p>
         <div className="project-grid">
@@ -83,9 +83,46 @@ const Challenge = () => {
             logoModal={''}
             textModal={''}
             iFrameModal={iFrameModal1}
-            linkModal={"https://clement-plancon.github.io/ping-coming-soon-page-master/"}
+            linkModal={"https://clement-plancon.github.io/huddle-landing-page-with-single-introductory-section-master/"}
+            githubLink={"https://github.com/Clement-Plancon/huddle-landing-page-with-single-introductory-section-master"}
+            skills1={"HTML"}
+            skills2={"CSS"}
           />
+   
+      
+          <CardProjects
+            block={blockCard}
+            element={elementCarousel}
+            modifier={modifierShadow}
+            titles={jsonDatasPro.title2}
+            text={jsonDatasPro.text2}
+            logoModal={''}
+            textModal={''}
+            iFrameModal={iFrameModal1}
+            linkModal={"https://clement-plancon.github.io/ping-coming-soon-page-master/"}
+            githubLink={"https://github.com/Clement-Plancon/ping-coming-soon-page-master"}
+            skills1={"HTML"}
+            skills2={"CSS"}
+          />    
+        
+      
+          <CardProjects
+            block={blockCard}
+            element={elementCarousel}
+            modifier={modifierShadow}
+            titles={jsonDatasPro.title3}
+            text={jsonDatasPro.text3}
+            logoModal={''}
+            textModal={''}
+            iFrameModal={iFrameModal1}
+            linkModal={"https://clement-plancon.github.io/single-price-grid-component-master/"}
+            githubLink={"https://github.com/Clement-Plancon/single-price-grid-component-master"}
+            skills1={"HTML"}
+            skills2={"CSS"}
+            skills3={"Javascript"}
+          />    
         </div>
+        
       </section>
     </main>
   )

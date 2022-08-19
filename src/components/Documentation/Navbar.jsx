@@ -16,9 +16,9 @@ const Navarbar = () => {
         <li>
           <Link to="/challenge">Challenges</Link>
         </li>
-        <li>
+       {/*  <li>
           <Link to="/resources">Ressources</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

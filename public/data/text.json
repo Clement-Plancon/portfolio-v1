@@ -26,9 +26,11 @@
     "title8": "Interactive Map"
   },
   "challenge": {
-    "text1": "Marquerie.co est un site B2B de vente de produits français et locaux qui met en relation marque et point de vente en facilitant le dialogue et les échanges.",
-    "text2": "Etienne Services est une entreprise familiale d’artisans fournissant des services de serrurerie, plomberie et électricien.",
-    "title1": "Ping Application",
-    "title2": "Etienne Services"
+    "text1": "Ce défi consiste à créer une page de destination à partir des conceptions fournies dans le code de démarrage.",
+    "text2": "Ce défi consiste à créer une page type 'Coming Soon' et à la rendre aussi proche que possible de la conception d'origine.",
+    "text3": "Ce défi consiste à créer une page à partir d'une maquette; il faut afficher les éléments de façon optimal peu importe la taille de l'écran.",
+    "title1": "Frontend Mentor - Huddle landing page with single introductory section",
+    "title2": "Frontend Mentor - Ping coming soon page",
+    "title3": "Frontend Mentor - Single price grid component"
   }
 }
